@@ -10,7 +10,7 @@
         // @ts-ignore
         var canvas = document.querySelector('canvas'), ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight * 1.5;
+        canvas.height = window.innerHeight * 0.8;
         
         var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
         letters = letters.split('');
@@ -35,21 +35,116 @@
                 }
             }
         }
-
         setInterval(draw, 33);
     })
 
 </script>
 
-<section>
-    <div class="bg-black relative text-white">
-        <nav class="container mx-auto relative">
-            <a href="#1" class="font-bold font-serif hover:text-opacity-75 inline-flex items-center leading-none mr-4 text-white text-xl uppercase">     
-                <img class="m-6" src="/logo-white.svg" alt="Logo da Reality Check -- duas metades desalinhadas de um espiral com uma linha as dividindo" width=30 height=30/>
-                <span><p class="font-sans text-yellow-50">Reality check</p></span> 
-            </a>
+<style>
+    body{
+    margin:0;
+    overflow-x:hidden;
+    }
+
+    .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+
+    .footer .row a:hover{
+    color:#fff;
+    }
+
+    .footer .row ul{
+    width:100%;
+    }
+
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+}
+</style>
+
+<section class="flex itens-center bg-black justify-center">
+    <div>
+    <div class="bg-black relative text-white grid">
+        <nav class="mx-auto">
+            <img class="my-4 mx-auto" src="/logo-white.svg" alt="Logo da Reality Check -- duas metades desalinhadas de um espiral com uma linha as dividindo" width=30 height=30/>
+            <span><p class="font-bold hover:text-opacity-75 font-sans text-yellow-50 uppercase">Reality check</p></span> 
         </nav>
+    </div>
+    </div>
+</section>
+
+<section class="flex itens-center bg-black justify-center">
+    <div>
+    <div class="text-slate-400 grid">
+        <p>Em construção.</p>
+    </div>
     </div>
 </section>
 
 <canvas class="bg-slate-600"></canvas>
+
+
+<footer>
+    <div class="footer">
+    <!--
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    -->
+    <div class="row">
+    Reality Check Copyright © 2023 Loureiro&Lemos CNPJ: 42.982.398/0001-59 ||  Criado por Vini Lemos
+    </div>
+    </div>
+    </footer>
